@@ -524,7 +524,58 @@ footer .contact {
    }
   }
    @media only screen and (min-width: 1200px) {
-   /*Desktop styles here*/
+     .content-wrapper {
+       max-width: 960px;
+     }
+
+     /* Hero */
+     .hero-area h1 {
+       width: 55%;
+     }
+
+     /* Aside */
+     aside .content-wrapper {
+       justify-content: space-between;
+     }
+
+     aside .content-wrapper .form-description,
+     aside .content-wrapper .form {
+       width: 66%;
+     }
+
+     /* features */
+     .features h2 {
+       width: 73%;
+     }
+
+     .features article {
+       flex-basis: 68%;
+     }
+
+     /* Reviews */
+     .reviews article div {
+       width: 36%;
+     }
+
+     /* About page */
+
+     .mission h2,
+     .contact-section .content-wrapper h2 {
+       width: 73%;
+     }
+
+     .contact-section .content-wrapper h2 {
+       margin-bottom: 30px;
+     }
+
+     /* FAQ Page */
+     .faq h2 {
+       width: 100%;
+     }
+
+     .faq-content {
+       flex-basis: 80%;
+     }
    }
 
 /* ==========================================================================
