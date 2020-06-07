@@ -116,8 +116,6 @@ ul, ol {
   text-transform: uppercase;
   font-size: 1em;
   font-weight: bold;
-
-
 }
 
 a {
@@ -150,11 +148,11 @@ color: #e2e3ed;
 }
 
 img {
-
+  width: 100%;
 }
 
 figure {
-
+  margin: 0;
 }
 
 address {
@@ -168,8 +166,13 @@ address {
 
 }
 
-header .content-wrapper {
-  background-color: #3a3a3a;
+header {
+  background-color: #333;
+}
+
+.hero-area {
+  background: url('../img/hero-image.jpg') center no-repeat #333;
+  background-size: cover;
 }
 
 /* Aside */
@@ -209,6 +212,11 @@ input[type=button] {
 }
 
 /* Features */
+
+.features {
+  background: url('../img/features.jpg') center no-repeat #333;
+  background-size: cover;
+}
 
 /* Reviews */
 
@@ -330,6 +338,7 @@ header nav ul {
 
 footer {
 flex-direction: column;
+background-color: #333;
 }
 
 footer .content-wrapper {
@@ -368,6 +377,14 @@ footer .contact h4 {
 
 
 /******* Mobile Styles - Homepage ******/
+header figure {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
 
 .hero-area {
   display: flex;
@@ -586,6 +603,14 @@ margin-bottom: 50px;
      justify-content: space-between;
    }
 
+   header figure {
+     width: 30%;
+     display: flex;
+     justify-content:flex-start;
+     align-items:flex-start;
+     flex-flow: row wrap;
+   }
+
    header nav {
      width: 20%;
    }
@@ -704,6 +729,14 @@ margin-bottom: 50px;
    @media only screen and (min-width: 1200px) {
      .content-wrapper {
        max-width: 960px;
+     }
+
+     header figure {
+       width: 23%;
+       display: flex;
+       justify-content:flex-start;
+       align-items:flex-start;
+       flex-flow: row wrap;
      }
 
      /* Hero */
